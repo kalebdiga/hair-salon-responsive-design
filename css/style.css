@@ -1,0 +1,222 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* body {
+} */
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+   /* border: 1px solid black; */
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 4vw;
+   font-size: 1.5vw;
+}
+nav{
+    /* border: 1px solid black; */
+   width:60% ;
+   justify-content: flex-start;  
+   display: flex;
+
+}
+nav>ul{
+    display: flex;
+    /* border: 1px solid rgb(226, 50, 50); */
+    width:100% ;
+    justify-content: space-around;
+
+ 
+} 
+nav>ul>li{
+    width: 16.6666%;
+        /* border: 1px solid black; */
+        display: flex;
+   font-size: 1.3vw;
+    align-items: center;
+    justify-content: center;
+}
+ nav>ul>li>a{ 
+   width: 100%; 
+} 
+.container2{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   margin-top: 0;
+   position: relative;
+   bottom: 13vw;
+}
+.container4>div{
+    flex-basis: 20.33%;
+    margin-right: 1%;
+    text-align: center;
+  
+}
+.container3{
+    /* border: 1px solid rgb(23, 8, 8); */
+   height: 20vw;
+   width: 17vw;
+   position: relative;
+   bottom: 20vw;
+   left: 32%;
+}
+.container5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(23, 8, 8); */
+    position: relative;
+    bottom: 5vw;
+  background: rgba(95%, 96%, 96%, 100%);
+flex-wrap: wrap;
+}
+.container5 >div, .container5> video{
+    width: 34vw;
+    margin-block: 4%;
+    height: 23vw;
+
+}
+/* footer {
+
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.container1{
+background-image: url('../images/FLUCUd6XECMYEQm.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center top ;
+  border-bottom:7px solid rgb(142, 114, 114) ;
+   border-bottom-right-radius: 10%;
+ height: 56vw;
+ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 86%);
+}
+
+.makeItVertical{
+    writing-mode: vertical-rl;
+    /* border: 1px solid; */
+    /* padding: 2%; */
+    margin: 1%;
+    color: white;
+    /* font-weight: bolder; */
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 10%;
+
+}
+.container2>div{
+    /* border: 1px solid; */
+    /* margin: auto; */
+    
+    flex-basis: 100%;
+    font-size: 1.3vw;
+    padding: 7% ;
+    padding-left: 32%;
+    padding-top: 11%;
+}
+.container2>div > h1{
+    font-size: 6vw;
+    color: white;
+}
+
+.buttom{
+    /* border: 0.1em solid rgb(255, 255, 255); */
+    text-align: center;
+    /* padding: 1%; */
+    color: white;
+    background: black;
+    display: block;
+    width:11vw;
+    height: 3vw;
+    box-shadow: 1px white;
+    font-size: 0.7vw;
+    /* border-top:1px solid white; */
+    margin-top: 2%;
+    font-weight: bold;
+}
+.container3 {
+  padding: 1%;
+background: black;
+
+
+}
+.container3> span, p{
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    margin-top: 2%;
+    font-stretch: 100%;
+}
+.container3> span{
+    display: block;
+    padding: 5% 0% 0% 11%;
+    height: 2.6vw;
+    border-left: 3px solid;
+}
+.container3>p:before{
+   content: "20%";
+   font-weight: bolder;
+   font-size: 2.6vw;
+}
+.container3>.buttom{
+    color: black;
+    background: white;
+    margin-top: 17%;
+}
+.container4 img{
+    width: 20%; 
+}
+.container4 p{
+    color: black;
+}
+.container5 p{
+    color: black;
+    margin-block: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container5>div > h3{
+ width: 20vw;
+ font-size: 3vw;
+}
+P{
+    line-height: 1.5;
+    word-spacing: 0.2em;
+    font-size: 1.3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
